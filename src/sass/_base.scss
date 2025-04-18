@@ -1,0 +1,28 @@
+body {
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+  color: $text-color;
+  margin: 0;
+}
+
+main {
+  margin-top: $navigation-height-mobile;
+
+  @media (min-width: $resolution-xl) {
+    margin-top: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 500;
+  color: $header-color;
+}
+
+a {
+  text-decoration: none;
+}

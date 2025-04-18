@@ -1,0 +1,53 @@
+/* Spacing */
+$xs: 10px;
+$s: 20px;
+$m: 35px;
+$l: 70px;
+$xl: 120px;
+
+
+/* Sizes */
+$navigation-height: 130px;
+$navigation-height-mobile: 110px;
+
+
+/* Colors */
+$black: #2C2F24;
+$gray-1: #DBDFD0;
+$gray-2: #474747;
+$gray-3: #F9F9F7;
+$gray-4: #414536;
+$gray-5: #ADB29E;
+$white: #fff;
+$red: #AD343E;
+$aliceblue: aliceblue;
+$yellow: #E7B222;
+
+$primary: $red;
+$secondary: $yellow;
+$text-color: $gray-4;
+$header-color: $black;
+
+
+/* Fonts */
+$text-size: calc(18rem/18);
+
+$h1-size: calc(54rem/18);
+$h2-size: calc(44rem/18);
+$h3-size: calc(30rem/18);
+$h4-size: calc(24rem/18);
+$h5-size: calc(18rem/18);
+
+
+/* Resolutions */
+$resolution-sm: 576px;
+$resolution-md: 768px;
+$resolution-lg: 992px;
+$resolution-xl: 1200px;
+$resolution-xxl: 1480px;
+
+
+// Mixins
+@mixin font-size($fontSize) {
+    font-size: calc($fontSize / 16) + rem;
+}

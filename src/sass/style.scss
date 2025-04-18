@@ -1,0 +1,24 @@
+/*!
+Theme Name: aslanfood
+Theme URI: https://github.com/patrykjankowski/aslanfood
+Author: Patryk Jankowski – Softcraft
+Author URI: https://softcraft.pl
+Description: aslanfood
+Version: 2.0.0
+Text Domain: aslanfood
+*/
+
+//styles
+@import "variables";
+@import "base";
+@import "button";
+@import "navigation";
+@import "footer";
+@import "utilities";
+@import "wordpress";
+@import "woocommerce";
+
+//tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

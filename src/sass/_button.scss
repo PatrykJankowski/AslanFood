@@ -1,0 +1,105 @@
+.button,
+.wc-block-components-button,
+.woocommerce div.product form.cart .button,
+.woocommerce ul.products li.product .button,
+.woocommerce-page .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link,
+.woocommerce .woocommerce-info .button,
+:where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce button.button.woocommerce-button,
+.woocommerce table.my_account_orders .button,
+body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-post-visual-editor) .woocommerce a.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    max-width: fit-content;
+    padding: 0 1.25rem;
+    border-radius: 34px;
+    border: 1px solid $black;
+    font-family: 'DM Sans', sans-serif;
+    @include font-size(16);
+    font-weight: 700;
+    background-color: transparent;
+    color: $header-color;
+    transition: all 300ms;
+
+    @media (min-width: $resolution-xl) {
+        height: 64px;
+        padding: 0 2rem;
+        border-width: 2px;
+    }
+
+    &:hover {
+        background-color: $black;
+        color: $white;
+        transition: all 300ms;
+    }
+
+    &--primary {
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+
+
+        &:hover {
+            border-color: $black;
+            border-color: $black;
+            color: $white;
+        }
+    }
+
+    &--secondary {
+        background-color: $secondary;
+        border-color: $yellow;
+        color: $white;
+
+        &:hover {
+            border-color: $black;
+        }
+    }
+}
+
+
+.wc-block-components-button {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+
+    &:hover {
+        border-color: $black;
+        border-color: $black;
+        color: $white;
+    }
+}
+
+.woocommerce ul.products li.product .button,
+.woocommerce div.product form.cart .button,
+.woocommerce-page .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link,
+.woocommerce .woocommerce-info .button,
+:where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce button.button.woocommerce-button,
+.woocommerce table.my_account_orders .button,
+body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-post-visual-editor) .woocommerce a.button,
+body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-post-visual-editor) .woocommerce button.button {
+    align-content: center;
+    height: 50px;
+    background-color: $secondary;
+    border-color: $yellow;
+    color: $white;
+
+    &:hover {
+        border-color: $black;
+    }
+}
+
+.wc-block-components-shipping-calculator-address__button {
+    border-color: $black;
+    outline: none;
+}
+
+.woocommerce ul.products li.product .button {
+    display: flex;
+}
+
+
+:where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce button.button {
+    
+}
