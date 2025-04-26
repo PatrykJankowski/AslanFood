@@ -6,7 +6,7 @@
     <div class="container mx-auto px-6">
 
         <div class="text-center mb-10">
-            <h1 class="text-3xl xl:text-5xl mb-6">Nasze produkty</h1>
+            <h1 class="text-3xl xl:text-5xl font-medium mb-6">Nasze produkty</h1>
             <p class="text-xl">Produkty najwyższej jakości od najlepszych producentów.</p>
         </div>
 

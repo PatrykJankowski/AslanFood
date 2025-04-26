@@ -9,7 +9,7 @@ get_header();
     class="relative flex items-center justify-center h-[500px] xl:h-[800px] mb-24 bg-cover bg-center bg-[url('/wp-content/themes/aslanfood/img/bg-hero.jpg')]"
     role="banner">
     <div class="container mx-auto px-6 flex flex-col items-center text-center">
-        <h2 class="max-w-3xl text-5xl xl:text-[100px] font-medium xl:leading-[110px] text-center">
+        <h2 class="max-w-3xl text-5xl font-medium xl:text-[100px] font-medium xl:leading-[110px] text-center">
             Żywność wysokiej jakości
         </h2>
         <p class="my-10 text-xl text-black">Produkty najwyższej jakości od najlepszych producentów.</p>
@@ -54,7 +54,7 @@ for ($i = 1; $i <= 3; $i++) {
                 <div class="w-full h-full bg-cover bg-center flex items-center justify-center"
                     style="background-image: url('<?php echo esc_url($slide['image']); ?>');">
                     <div class="container mx-auto px-6 text-center text-white">
-                        <h2 class="max-w-3xl text-5xl xl:text-[100px] font-medium xl:leading-[110px] mx-auto">
+                        <h2 class="max-w-3xl text-5xl font-medium xl:text-[100px] font-medium xl:leading-[110px] mx-auto">
                             <?php echo esc_html($slide['title']); ?>
                         </h2>
                         <p class="my-10 text-xl text-black"><?php echo esc_html($slide['text']); ?></p>
@@ -85,7 +85,7 @@ for ($i = 1; $i <= 3; $i++) {
 
 <section class="text-center pb-24">
     <div class="container mx-auto px-6 pb-10 flex justify-between">
-        <h2 class="text-3xl xl:text-5xl">Zobacz nowości w sklepie</h2>
+        <h2 class="text-3xl xl:text-5xl font-medium">Zobacz nowości w sklepie</h2>
         <a href="<?php echo site_url('/sklep/'); ?>" class="button button--primary hidden xl:flex">
             Zobacz wszystkie
         </a>
@@ -108,12 +108,12 @@ for ($i = 1; $i <= 3; $i++) {
                     <a href="<?php the_permalink(); ?>"
                         class="flex flex-col border border-gray-1 rounded-xl p-4 hover:shadow-lg transition">
                         <?php if (has_post_thumbnail()): ?>
-                            <?php the_post_thumbnail('medium', ['class' => 'mx-auto mb-4']); ?>
+                            <?php the_post_thumbnail('medium', ['class' => 'mx-auto mb-4 bg-cover grow max-h-[256px]']); ?>
                         <?php else: ?>
                             <img src="/wp-content/uploads/woocommerce-placeholder-300x300.png">
                         <?php endif; ?>
 
-                        <h3 class="text-lg font-semibold mb-2"><?php the_title(); ?></h3>
+                        <h3 class="font-semibold mb-2"><?php the_title(); ?></h3>
 
                         <?php if (has_excerpt()): ?>
                             <div class="text-sm mb-4 flex-grow"><?php the_excerpt(); ?></div>
@@ -142,10 +142,10 @@ for ($i = 1; $i <= 3; $i++) {
             <div class="relative mb-12">
                 <div class="pr-12">
                     <img src="/wp-content/themes/aslanfood/img/food.jpg" alt="Delicious Wraps"
-                        class="object-cover rounded-xl h-[566px]">
+                        class="object-cover rounded-xl">
                 </div>
                 <div
-                    class="absolute -bottom-12 right-0 text-white bg-black p-12 rounded-xl max-w-xs flex flex-col gap-4">
+                    class="absolute -bottom-12 right-0 text-white bg-black p-8 sm:p-12 rounded-xl max-w-xs flex flex-col gap-4">
                     <h3 class="text-xl text-white font-semibold mb-3">Skontaktuj się z nami</h3>
                     <p class="flex items-center gap-1">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -186,7 +186,7 @@ for ($i = 1; $i <= 3; $i++) {
 
             <!-- Prawa kolumna: Tekst -->
             <div class="text-left">
-                <h2 class="text-3xl xl:text-5xl mb-6">
+                <h2 class="text-3xl xl:text-5xl font-medium mb-6">
                     Dołącz do nas w misji na rzecz zdrowego odżywiania
                 </h2>
                 <p class="text-lg font-medium text-black">
@@ -199,10 +199,10 @@ for ($i = 1; $i <= 3; $i++) {
                     niezawodność w realizacji zamówień.
                 </p>
 
-                <div class="my-6 flex flex-wrap justify-between items-center gap-12">
-                    <img src="/wp-content/themes/aslanfood/img/kebok.png" alt="Logo Kebok" class="h-20">
-                    <img src="/wp-content/themes/aslanfood/img/marida.png" alt="Logo Marida" class="h-20">
-                    <img src="/wp-content/themes/aslanfood/img/aslan.png" alt="Logo Aslan" class="h-20">
+                <div class="my-6 flex flex-wrap justify-between items-center gap-2 md:gap-12">
+                    <img src="/wp-content/themes/aslanfood/img/kebok.png" alt="Logo Kebok" class="h-16 md:h-20">
+                    <img src="/wp-content/themes/aslanfood/img/marida.png" alt="Logo Marida" class="h-16 md:h-20">
+                    <img src="/wp-content/themes/aslanfood/img/aslan.png" alt="Logo Aslan" class="h-16 md:h-20">
                 </div>
 
                 <a href="/nasze-marki" class="button mt-2">Nasze marki</a>
@@ -218,7 +218,8 @@ for ($i = 1; $i <= 3; $i++) {
 $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
-    'posts_per_page' => 5, // Pobiera 3 ostatnie posty
+    'posts_per_page' => 5,
+    'cat' => 1,
 );
 $latest_posts = new WP_Query($args);
 ?>
@@ -226,7 +227,7 @@ $latest_posts = new WP_Query($args);
 
 <section class="py-24 bg-aliceblue">
     <div class="container mx-auto px-6 pb-10 flex justify-between">
-        <h2 class="text-3xl xl:text-5xl">Ostatnie artykuły</h2>
+        <h2 class="text-3xl xl:text-5xl font-medium">Ostatnie artykuły</h2>
         <a href="<?php echo site_url('/blog/'); ?>" class="button button--primary hidden xl:flex">
             Zobacz więcej artykułów
         </a>

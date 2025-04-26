@@ -69,6 +69,12 @@
           }
         }
 
+        &:nth-child(2) {
+          .sub-menu {
+            display: none;
+          }
+        }
+
         a {
           @include font-size(20);
           display: block;
@@ -147,30 +153,37 @@
         .sub-menu {
           display: none;
           position: absolute;
-          top: 48px;
-          padding: 1rem 1rem 0;
-          width: 372px;
+          z-index: 100;
+          top: 24px;
+          padding: 1rem 1.5rem 0;
+          width: 300px;
           list-style: none;
-          background: $white;
+          background: #000;
+          text-transform: uppercase;
 
           li {
 
             &.current_page_item, &.current_page_parent {
               > a {
-                color: $primary;
+                color: $secondary;
               }
             }
 
+            > a[aria-current="page"] {
+              color: $secondary;
+            }
+
             a {
-              font-size: 1.25rem;
+              font-size: 0.875rem;
               display: flex;
               height: 100%;
               width: 100%;
               padding: 10px 0;
-              border-bottom: 1px solid $gray-1;
+              color: $white;
+              // border-bottom: 1px solid $white;
 
               &:hover {
-                color: $primary;
+                color: $secondary;
               }
             }
           }

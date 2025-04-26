@@ -6,7 +6,8 @@
 .woocommerce .woocommerce-info .button,
 :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce button.button.woocommerce-button,
 .woocommerce table.my_account_orders .button,
-body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-post-visual-editor) .woocommerce a.button {
+body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-post-visual-editor) .woocommerce a.button,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.woof_reset_search_form {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +24,7 @@ body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-p
     transition: all 300ms;
 
     @media (min-width: $resolution-xl) {
-        height: 64px;
+        height: 58px;
         padding: 0 2rem;
         border-width: 2px;
     }
@@ -78,7 +79,8 @@ body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-p
 :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce button.button.woocommerce-button,
 .woocommerce table.my_account_orders .button,
 body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-post-visual-editor) .woocommerce a.button,
-body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-post-visual-editor) .woocommerce button.button {
+body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-post-visual-editor) .woocommerce button.button,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.woof_reset_search_form {
     align-content: center;
     height: 50px;
     background-color: $secondary;

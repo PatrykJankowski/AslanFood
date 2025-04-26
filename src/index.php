@@ -6,19 +6,21 @@ $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
     'posts_per_page' => 6,
+    'cat' => 1,
     'paged' => $paged,
 );
 $posts_query = new WP_Query($args);
+$page_id = get_option('page_for_posts');
+$page = get_post($page_id)
 ?>
 
 <?php get_template_part('partials/section-baner', null, ['bg' => '/wp-content/themes/aslanfood/img/bg-hero.jpg']); ?>
 
 <section>
     <div class="container mx-auto px-6 mt-24">
-        <h2 class="font-bold text-4xl md:text-6xl text-center mb-6">Smacznie i świadomie – blog Aslan Food</h2>
+        <h2 class="text-3xl xl:text-5xl font-medium text-center mb-6"><?php echo get_the_title($page_id); ?></h2>
         <div class="flex justify-center">
-            <p class="max-w-2xl text-center text-lg">Praktyczne porady, przepisy i ciekawostki o zdrowym jedzeniu, naturalnych produktach i ich wpływie na codzienne życie.
-            </p>
+            <div class="max-w-2xl text-center text-lg"><?php echo apply_filters('the_content', $page->post_content); ?></div>
         </div>
 
         <!-- <div class="flex flex-wrap justify-center 2xl:justify-between gap-4 2xl:gap-0 mt-12">

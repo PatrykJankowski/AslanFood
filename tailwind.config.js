@@ -30,7 +30,7 @@ module.exports = {
       '2xl': '1480px',
     },
     fontFamily: {
-      'PlayfairDisplay': ['Playfair Display'],
+      'PlayfairDisplay': ['DM Sans'],
       'DMSans': ['DM Sans'],
     },
     extend: {

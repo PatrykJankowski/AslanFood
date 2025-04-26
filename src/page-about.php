@@ -14,10 +14,10 @@ get_header();
             <div class="relative mb-12">
                 <div class="pr-12">
                     <img src="/wp-content/themes/aslanfood/img/food.jpg" alt="Delicious Wraps"
-                        class="object-cover rounded-xl h-[566px]">
+                        class="object-cover rounded-xl">
                 </div>
                 <div
-                    class="absolute -bottom-12 right-0 text-white bg-gray-2 p-12 rounded-xl max-w-xs flex flex-col gap-4">
+                    class="absolute -bottom-12 right-0 text-white bg-gray-2 p-8 sm:p-12 rounded-xl max-w-xs flex flex-col gap-4">
                     <h3 class="text-xl text-white font-semibold mb-3">Skontaktuj się z nami</h3>
                     <p class="flex items-center gap-1">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,21 +59,18 @@ get_header();
 
             <!-- Prawa kolumna: Tekst -->
             <div class="text-left">
-                <h2 class="text-3xl xl:text-5xl mb-6">
+                <h2 class="text-3xl xl:text-5xl font-medium mb-6">
                     Aslan Food Sp. z o.o. to rodzinna firma działająca w branży spożywczej, obecna na rynku od 2020
                     roku.
                 </h2>
                 <p class="text-lg font-medium text-black">
-                    Aslan Food Sp. z o.o. to rodzinna firma działająca w branży spożywczej, obecna na rynku od 2020
-                    roku. Nasza siedziba mieści się w centralnej Polsce, jednak zasięg działalności obejmuje zarówno
-                    rynek krajowy, jak i międzynarodowy.
+                    Nasza siedziba mieści się w centralnej Polsce, jednak zasięg działalności obejmuje zarówno
+                    rynek krajowy, jak i międzynarodowy. Specjalizujemy się w pozyskiwaniu, imporcie, eksporcie oraz sprzedaży hurtowej i detalicznej
+                    produktów spożywczych najwyższej jakości.
                 </p>
                 <p class="mt-6">
-                    Specjalizujemy się w pozyskiwaniu, imporcie, eksporcie oraz sprzedaży hurtowej i detalicznej
-                    produktów spożywczych najwyższej jakości. W naszej ofercie znajdują się starannie wyselekcjonowane
-                    herbaty, zboża, szeroka gama roślin strączkowych, orzechy, suszone owoce, przyprawy, a także inne
-                    towary pochodzenia roślinnego. Produkty te pochodzą zarówno z upraw konwencjonalnych, jak i
-                    ekologicznych, co pozwala nam elastycznie odpowiadać na potrzeby różnych segmentów rynku.
+                    W naszej ofercie znajdują się starannie wyselekcjonowane herbaty, zboża, szeroka gama roślin strączkowych, orzechy, suszone owoce, przyprawy, a także inne
+                    towary pochodzenia roślinnego. Produkty te pochodzą zarówno z upraw konwencjonalnych, jak i ekologicznych, co pozwala nam elastycznie odpowiadać na potrzeby różnych segmentów rynku.
                 </p>
                 <a href="/nasze-marki" class="button mt-6">Nasze marki</a>
             </div>
@@ -86,7 +83,7 @@ get_header();
     <div class="container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div class="text-left">
-                <h2 class="text-3xl xl:text-5xl mb-6">
+                <h2 class="text-3xl xl:text-5xl font-medium mb-6">
                     Naszą misją jest dostarczanie klientom produktów, które spełniają najwyższe standardy jakości,
                     świeżości i bezpieczeństwa żywności.
                 </h2>
@@ -118,7 +115,25 @@ get_header();
     </div>
 </section>
 
-<?php get_template_part('partials/section-contact'); ?>
+<section class="py-24">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl xl:text-5xl font-medium mb-6">Nasze wartości</h2>
+    <p class="text-lg leading-relaxed">
+      Zrównoważony rozwój stanowi podstawę wszystkich naszych działań, ponieważ wierzymy, że lepsza przyszłość dla kolejnych pokoleń zaczyna się już dziś. Zobowiązujemy się do produkcji wysokiej jakości produktów Aslan Food w sposób przyjazny dla środowiska, z poszanowaniem dobrostanu naszych pracowników oraz społeczeństwa.
+    </p>
+    <p class="text-lg leading-relaxed mt-6">
+      Nasze zaangażowanie w społeczną odpowiedzialność biznesu (CSR) widać na każdym etapie działalności. Stawiamy na surowce pochodzące ze zrównoważonych źródeł i maksymalne wykorzystanie ekologicznych zasobów.
+    </p>
+  </div>
+</section>
+
+
+<?php
+$args = array(
+    'bg_color' => 'bg-gray-3',
+);
+get_template_part('partials/section-contact', null, $args);
+?>
 
 
 <?php get_footer(); ?>

@@ -10,7 +10,7 @@ get_header();
 
 <section class="py-24">
     <div class="container mx-auto px-6">
-        <h2 class="text-3xl xl:text-5xl mb-16">Nasze marki</h2>
+        <h2 class="text-3xl xl:text-5xl font-medium mb-16">Nasze marki</h2>
 
         <div class="space-y-24">
             <div class="md:grid md:grid-cols-12 md:gap-12 items-start">
@@ -30,7 +30,7 @@ get_header();
                         to
                         gwarancja powtarzalności smaku, bezpieczeństwa surowca i efektywnej logistyki.
                     </p>
-                    <a href="/marka/kebok/" class="button mt-4">Zobacz w sklepie</a>
+                    <a href="/sklep/swoof/product_brand-kebok/" class="button mt-4">Zobacz w sklepie</a>
                 </div>
             </div>
 
@@ -52,7 +52,7 @@ get_header();
                         głębię
                         smaku z autentycznym pochodzeniem – oferując przyjemność, która zakorzeniona jest w tradycji.
                     </p>
-                    <a href="/marka/marida/" class="button mt-4">Zobacz w sklepie</a>
+                    <a href="/sklep/swoof/product_brand-marida/" class="button mt-4">Zobacz w sklepie</a>
                 </div>
             </div>
 
@@ -63,7 +63,7 @@ get_header();
                 <div class="md:col-span-10">
                     <h3 class="text-2xl font-semibold mb-2">Aslan</h3>
                     <p class="italic mb-4">Jakość, która wyrasta z natury.</p>
-                    <p class="leading-relaxed text-gray-800">
+                    <p class="leading-relaxed">
                         Marka Aslan obejmuje starannie wyselekcjonowane produkty sypkie – rośliny strączkowe, zboża oraz
                         inne
                         surowce pochodzenia roślinnego, które znajdują szerokie zastosowanie w kuchniach całego świata.
@@ -74,7 +74,7 @@ get_header();
                         i
                         odbiorców detalicznych, którzy szukają sprawdzonych i wartościowych składników.
                     </p>
-                    <a href="/marka/aslan/" class="button mt-4">Zobacz w sklepie</a>
+                    <a href="/sklep/swoof/product_brand-aslan/" class="button mt-4">Zobacz w sklepie</a>
                 </div>
             </div>
         </div>

@@ -4,8 +4,8 @@
 
 <section class="py-24 shop">
     <div class="container mx-auto px-6">
-        <div class="text-center mb-10">
-            <h1 class="text-3xl xl:text-5xl mb-6">Nasze produkty</h1>
+        <div class="mb-12">
+            <h1 class="text-3xl xl:text-5xl font-medium mb-6">Nasze produkty</h1>
             <p class="text-xl">Produkty najwyższej jakości od najlepszych producentów.</p>
         </div>
 
@@ -13,12 +13,13 @@
         <div class="grid grid-cols-1 xl:grid-cols-[280px_1fr] gap-8">
             <!-- LEWA KOLUMNA: FILTRY -->
             <aside class="hidden xl:block">
-                <?php echo do_shortcode('[woof  sid="generator_68022478a8873" autohide="0" autosubmit="-1" is_ajax="0" ajax_redraw="0" start_filtering_btn="0" btn_position="b" dynamic_recount="-1" hide_terms_count_txt="0" mobile_mode="0" ]'); ?>
-            </aside>
+            <?php echo do_shortcode("[woof sid='generator_6808d1f0d76b7' autohide='0' autosubmit='-1' is_ajax='1' ajax_redraw='0' start_filtering_btn='0' btn_position='b' dynamic_recount='-1' hide_terms_count_txt='0' mobile_mode='0' ]"); ?>
+            
+        </aside>
 
             <!-- PRAWA KOLUMNA: produkty -->
             <div>
-                <div class="flex flex-wrap gap-4 mb-10 justify-around">
+                <div class="flex flex-wrap gap-4 mb-10 justify-center xl:hidden">
                     <?php
                     $current_cat = get_queried_object();
                     $shop_page_url = get_permalink(wc_get_page_id('shop'));
@@ -32,7 +33,7 @@
 
                     $args = [
                         'taxonomy' => 'product_cat',
-                        'orderby' => 'name',
+                        'orderby' => 'menu_order',
                         'show_count' => 0,
                         'pad_counts' => 0,
                         'hierarchical' => 1,

@@ -1,10 +1,10 @@
 /*!
-Theme Name: aslanfood
+Theme Name: Aslan Food
 Theme URI: https://github.com/patrykjankowski/aslanfood
 Author: Patryk Jankowski – Softcraft
 Author URI: https://softcraft.pl
-Description: aslanfood
-Version: 2.0.0
+Description: Aslan Food tempalte for WordPress and WooCommerce
+Version: 1.0.0
 Text Domain: aslanfood
 */
 
@@ -14,6 +14,7 @@ Text Domain: aslanfood
 @import "button";
 @import "navigation";
 @import "footer";
+@import "others";
 @import "utilities";
 @import "wordpress";
 @import "woocommerce";

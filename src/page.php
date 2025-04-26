@@ -13,7 +13,7 @@ get_header();
             ?>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <h2 class="text-4xl font-semibold"><?php the_title(); ?></h2>
+                <h2 class="text-5xl font-medium"><?php the_title(); ?></h2>
             </div>
 
             <!-- Post Content -->
