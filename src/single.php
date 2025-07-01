@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<?php get_template_part('partials/section-baner', null, ['bg' => '/wp-content/themes/aslanfood/img/bg-hero.jpg']); ?>
-
 <article class="container mx-auto py-24 px-4 post">
     <?php
     if (have_posts()):

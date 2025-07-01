@@ -5,9 +5,6 @@ get_header();
 
 <?php $page_id = 2; ?>
 
-<?php get_template_part('partials/section-baner', null, ['bg' => '/wp-content/themes/aslanfood/img/bg-hero.jpg']); ?>
-
-
 <section class="py-24">
     <div class="container mx-auto px-6">
         <h2 class="text-3xl xl:text-5xl font-medium mb-16">Nasze marki</h2>

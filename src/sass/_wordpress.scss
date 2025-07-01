@@ -1,204 +1,198 @@
-.pagination {
-    display: flex;
-    justify-content: center;
+.pagination,
+body.woocommerce nav.woocommerce-pagination {
+  display: flex;
+  justify-content: center;
 
-    ul {
+  ul {
+    display: inline-flex;
+    border: none;
+
+    li {
+        border: none;
+      a,
+      span {
+        width: 48px;
+        height: 48px;
         display: inline-flex;
-        gap: .25rem;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        background: $black;
+        border-right: 1px solid $gray-3;
 
-        a,
-        span {
-            width: 48px;
-            height: 48px;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
+        
 
-            color: $black;
-            background: $gray-1;
+        &.current {
+          background: $primary;
+          color: $white;
 
-            &:hover {
-                border: 1px solid $black;
-            }
-
-            &.current {
-                background: $primary;
-                color: $white;
-
-                &:hover {
-                    border: none;
-                }
-            }
+          
         }
+      }
     }
+  }
 
-    .next,
-    .prev {
-        font-weight: bold;
-    }
+  .next,
+  .prev {
+    font-weight: bold;
+  }
 }
-
 
 // Single post, page
 
 .single-post .post,
 .single-page,
 .woocommerce-account main {
-    p {
-        line-height: 1.75rem;
-    }
+  p {
+    line-height: 1.75rem;
+  }
 
-    p,
-    ul,
-    ol {
-        margin-bottom: 1rem;
-    }
+  p,
+  ul,
+  ol {
+    margin-bottom: 1rem;
+  }
 
-    li {
-        // margin: .5rem 0;
-        // padding-left: 1rem;
-        // border-left: 2px solid $secondary;
-        margin-left: 1.125rem;
-        list-style: disc;
-    }
+  li {
+    // margin: .5rem 0;
+    // padding-left: 1rem;
+    // border-left: 2px solid $secondary;
+    margin-left: 1.125rem;
+    list-style: disc;
+  }
 
-    h3,
-    h4 {
-        margin-bottom: 8px;
-        font-size: 1.25rem;
-        font-weight: 700;
-    }
+  h3,
+  h4 {
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
 }
 
 .single-post .post {
-    h1,
-    h2 {
-        margin-bottom: 1rem;
-        font-size: 1.875rem;
-        font-weight: 700;
-    }
+  h1,
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.875rem;
+    font-weight: 700;
+  }
 
-    h3,
-    h4 {
-        margin-bottom: 1rem;
-        font-size: 1.25rem;
-        font-weight: 700;
-    }
+  h3,
+  h4 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
 }
-
 
 // Form
 
 .wpcf7 .wpcf7-form {
-    input,
-    textarea {
-        width: 100%;
-        margin-bottom: 1rem;
-        padding: .5rem 1rem;
-        background-color: $gray-3;
-        color: $text-color;
-        border-radius: 30px;
-        border: 1px solid $gray-1;
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: $gray-3;
+    color: $text-color;
+    border-radius: 30px;
+    border: 1px solid $gray-1;
 
-        &::placeholder {
-            color: $text-color;
-            opacity: .8;
-        }
+    &::placeholder {
+      color: $text-color;
+      opacity: 0.8;
     }
+  }
 
-    textarea {
-        border-radius: 24px;
-        border-bottom-right-radius: 0;
-    }
+  textarea {
+    border-radius: 24px;
+    border-bottom-right-radius: 0;
+  }
 
-    .wpcf7-acceptance {
-        label {
-            display: inline-flex;
-            align-items: center;
-            cursor: pointer;
-        }
+  .wpcf7-acceptance {
+    label {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
     }
+  }
 
-    input[type=checkbox] {
-        width: 20px;
-        margin-right: 10px;
-    }
+  input[type="checkbox"] {
+    width: 20px;
+    margin-right: 10px;
+  }
 
-    input[type=submit] {
-        width: 100%;
-        background: $secondary;
-        color: $white;
-        border: none;
-        padding: 10px 20px;
-        font-weight: 700;
-        cursor: pointer;
-    }
+  input[type="submit"] {
+    width: 100%;
+    background: $secondary;
+    color: $white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+  }
 
-    select {
-        padding: 10px;
-    }
+  select {
+    padding: 10px;
+  }
 
-    .wpcf7-not-valid-tip {
-        position: relative;
-        top: -1rem;
-        @include font-size(14);
-    }
+  .wpcf7-not-valid-tip {
+    position: relative;
+    top: -1rem;
+    @include font-size(14);
+  }
 
-    .wpcf7-response-output {
-        margin: 1rem 0 0;
-    }
-    
-    .wpcf7-spinner {
-        position: absolute;
-        right: 0;
-        top: 10px;
-    }
+  .wpcf7-response-output {
+    margin: 1rem 0 0;
+  }
+
+  .wpcf7-spinner {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
 }
-
 
 // Newsletter
 
 .noptin-optin-main-wrapper {
-    width: 100%;
+  width: 100%;
 
+  .noptin-optin-form-wrapper .noptin-form-footer {
+    padding: 0px;
+  }
 
-    .noptin-optin-form-wrapper .noptin-form-footer {
-        padding: 0px;
-    }
+  .noptin-optin-form {
+    height: 204px;
+  }
 
+  .noptin-form-footer .noptin-form-button-block {
+    border: 0;
+    border-radius: 0;
+    height: auto;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-    .noptin-optin-form {
-        height: 204px;
-    }
+  .noptin-form-footer .noptin-form-field {
+    border: 0;
+    border-radius: 0;
+    background: #fff;
+  }
 
-    .noptin-form-footer .noptin-form-button-block {
-        border: 0;
-        border-radius: 0;
-        height: auto;
-        font-family: Poppins;
-        font-weight: 400;
-        font-size: 16px;
-        cursor: pointer;
-    }
+  .noptin-alert {
+    padding: 0.25rem;
+    margin-top: 0;
+  }
 
-    .noptin-form-footer .noptin-form-field {
-        border: 0;
-        border-radius: 0;
-        background: #fff;
-    }
-
-    .noptin-alert {
-        padding: .25rem;
-        margin-top: 0;
-    }
-
-    .noptin-optin-form {
-        justify-content: start;
-    }
+  .noptin-optin-form {
+    justify-content: start;
+  }
 }
-
 
 // SWOOF
 body .woof_checkbox_sales_container {
-    margin-bottom: 1rem;;
+  margin-bottom: 1rem;
 }

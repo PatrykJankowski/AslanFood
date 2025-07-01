@@ -41,7 +41,7 @@ $bg_color = !empty($args['bg_color']) ? $args['bg_color'] : 'bg-white';
         <div class="text-center md:text-right">
             <h3 class="text-2xl font-semibold">Poznaj nasze produkty</h3>
             <p class="text-lg mt-2">Naturalne składniki, świetna jakość</p>
-            <a href="/sklep" class="mt-6 button button--primary">Przejdź do sklepu</a>
+            <a href="/sklep" class="mt-6 button button--secondary">Przejdź do sklepu</a>
         </div>
     </div>
 </section>

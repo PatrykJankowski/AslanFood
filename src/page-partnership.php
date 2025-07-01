@@ -5,9 +5,7 @@ get_header();
 
 <?php $page_id = 2; ?>
 
-<?php get_template_part('partials/section-baner', null, ['bg' => '/wp-content/themes/aslanfood/img/bg-hero.jpg']); ?>
-
-<section class="text-center py-24 bg-gray-3">
+<section class="py-24 bg-gray-3">
   <div class="container mx-auto px-6">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       <div class="text-left">
@@ -43,17 +41,18 @@ get_header();
           </div>
         </div>
 
-        <hr class="my-6">
+       
+      </div>
+
+      <img src="/wp-content/themes/aslanfood/img/partnership.webp" alt="Partnership"
+        class="object-cover rounded-xl">
+    </div>
+     <hr class="my-6">
 
         <p>Jeśli są Państwo zainteresowani współpracą lub chcą poznać szczegóły oferty, zapraszamy do kontaktu.
           Chętnie przygotujemy indywidualną propozycję dopasowaną do profilu Państwa działalności.</p>
 
         <a href="/kontakt" class="button button--secondary mt-6">Skontaktuj się</a>
-      </div>
-
-      <img src="/wp-content/themes/aslanfood/img/partnership.webp" alt="Partnership"
-        class="h-full object-cover rounded-xl">
-    </div>
   </div>
 </section>
 
@@ -210,8 +209,8 @@ get_header();
     </h2>
 
     <div class="grid gap-12 grid-cols-1 md:grid-cols-2">
-      <!-- Punkt 1 -->
-      <div>
+      <div class="flex flex-col items-start text-left">
+        <svg class="mb-4 h-24" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 28.35 28.35"><defs><style>.cls-1{fill:none;stroke:#95a3ab;stroke-linecap:round;stroke-linejoin:round;stroke-width:.46px}</style></defs><circle cx="11.59" cy="6.49" r="1.77" class="cls-1"/><path d="m10.76 6.43.62.56.94-1.07" class="cls-1"/><path d="M10.85 3.33h0c.23-.67 1.17-.68 1.42-.01h0c.15.42.63.61 1.03.42h0c.64-.31 1.31.35 1.01.99h0c-.19.4.02.88.44 1.03h0c.67.23.68 1.17.01 1.42h0c-.42.15-.61.63-.42 1.03h0c.31.64-.35 1.31-.99 1.01h0c-.4-.19-.88.02-1.03.44h0c-.23.67-1.17.68-1.42.01h0c-.15-.42-.63-.61-1.03-.42h0c-.64.31-1.31-.35-1.01-.99h0c.19-.4-.02-.88-.44-1.03h0c-.67-.23-.68-1.17-.01-1.42h0c.42-.15.61-.63.42-1.03h0c-.31-.64.35-1.31.99-1.01h0c.4.19.88-.02 1.03-.44Z" class="cls-1"/><path d="m9.08 9.17-1.01 2.26 1.28-.36.51 1.07L11 9.85M14.09 9.16l1.01 2.27-1.28-.36-.51 1.07-1.12-2.25" class="cls-1"/><path d="M7.99 6.83h-2.3v17.73h13.9v-2.88M19.59 14.61V9.34l-2.51-2.51h0-1.92 0M17.08 9.35V6.83M19.59 9.35h-2.51" class="cls-1"/><path d="M7.71 14.6h1.7v1.7h-1.7zM10.83 14.6h.91M13.97 14.61h-.89M12.84 16.14h-2.01M7.71 17.86h1.7v1.7h-1.7zM10.83 17.86h.91M12.64 19.4h-1.81M7.71 21.12h1.7v1.7h-1.7zM10.83 21.12h.91M13.53 21.12h-.69M15.1 22.65h-4.27" class="cls-1"/><circle cx="17.68" cy="18.14" r="2.74" class="cls-1"/><circle cx="17.68" cy="18.14" r="4.02" class="cls-1"/><path d="m21.34 22.77-1.35-1.34M22.26 21.85l-1.34-1.33" class="cls-1"/><rect width="2.49" height="4.24" x="22.08" y="21.67" class="cls-1" rx=".14" ry=".14" transform="rotate(-45 23.324 23.789)"/></svg>
         <h3 class="text-xl font-semibold mb-2">Dogłębna wiedza w produkcji kebabu i roślin strączkowych</h3>
         <p>
           Dzięki wieloletniemu doświadczeniu w wytwarzaniu autentycznego kebabu, bulguru, ryżu, roślin strączkowych oraz
@@ -220,8 +219,8 @@ get_header();
         </p>
       </div>
 
-      <!-- Punkt 2 -->
-      <div>
+      <div class="flex flex-col items-start text-left">
+        <svg class="mb-4 h-24" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 28.35 28.35"><defs><style>.cls-1{fill:none;stroke:#95a3ab;stroke-linecap:round;stroke-linejoin:round;stroke-width:.46px}</style></defs><path d="M11.29 20.03v-1.51a6.382 6.382 0 0 1-3.51-5.71c0-3.53 2.86-6.4 6.4-6.4s6.4 2.86 6.4 6.4a6.4 6.4 0 0 1-3.51 5.71v1.51M14.17 4.66v-1.8M19.94 7.05l1.27-1.27M22.33 12.81h1.79M19.94 18.58l1.27 1.27M8.41 18.58l-1.27 1.27M6.02 12.81h-1.8M8.41 7.05 7.14 5.78M21.65 9.57l1.65-.72M21.76 15.8l1.67.66M6.7 16.06l-1.65.71M6.59 9.82l-1.67-.66M10.93 5.33l-.72-1.65M17.17 5.23l.66-1.67" class="cls-1"/><path d="M13.38 13.9h-1.12c-.62 0-1.12-.5-1.12-1.12h0c0-.62.5-1.12 1.12-1.12h0c.62 0 1.12.5 1.12 1.12v1.12ZM14.97 13.9h1.12c.62 0 1.12-.5 1.12-1.12h0c0-.62-.5-1.12-1.12-1.12h0c-.62 0-1.12.5-1.12 1.12v1.12Z" class="cls-1"/><path d="M14.97 19.95V13.9h-1.59v6.05" class="cls-1"/><path d="M16.68 21.86h-5.01a.96.96 0 0 1-.96-.96h0c0-.53.43-.96.96-.96h5.01c.53 0 .96.43.96.96h0c0 .53-.43.96-.96.96Z" class="cls-1"/><path d="M17.24 21.67c.24.18.39.47.39.8v.1c0 .55-.45 1-1 1h-4.92c-.56 0-1-.45-1-1v-.1c0-.32.15-.61.39-.8" class="cls-1"/><path d="M16.48 23.57a2.072 2.072 0 0 1-2.06 1.92h-.49c-1.09 0-1.98-.85-2.06-1.92" class="cls-1"/></svg>
         <h3 class="text-xl font-semibold mb-2">Innowacyjność i personalizacja</h3>
         <p>
           W ścisłej współpracy z naszymi klientami opracowujemy innowacyjne produkty, które spełniają konkretne
@@ -230,17 +229,8 @@ get_header();
         </p>
       </div>
 
-      <!-- Punkt 3 -->
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Dostęp do rynków lokalnych i międzynarodowych</h3>
-        <p>
-          Dzięki rozbudowanej sieci dystrybucji obsługujemy klientów w całej Europie. Nasi partnerzy zyskują dostęp do
-          szerokiej gamy rynków i mogą rozwijać swoją markę na skalę międzynarodową, korzystając z naszych produktów.
-        </p>
-      </div>
-
-      <!-- Punkt 4 -->
-      <div>
+      <div class="flex flex-col items-start text-left">
+        <svg class="mb-4 h-24" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 28.35 28.35"><defs><style>.cls-1,.cls-2{stroke-width:.46px;fill:none;stroke:#95a3ab;stroke-linecap:round;stroke-linejoin:round}.cls-2{stroke-width:.47px}</style></defs><path d="M22.21 21.56h0c1.7-1.96 2.72-4.51 2.72-7.32 0-6.11-4.87-11.06-10.87-11.06-2.17 0-4.2.65-5.9 1.77M6.11 6.7h0a11.144 11.144 0 0 0-2.92 7.54c0 6.11 4.86 11.06 10.87 11.06 2.5 0 4.79-.85 6.63-2.29" class="cls-1"/><path d="M6.11 9.28V6.7H3.94M22.21 18.94v2.62h2.2" class="cls-1"/><path d="M13.45 9.11h0c0 .26.22.48.48.48h.18c.27 0 .48-.21.48-.48v-.15c0-.26-.22-.48-.48-.48h-.18c-.27 0-.48-.21-.48-.48v-.15c0-.26.22-.48.48-.48h.18c.27 0 .48.21.48.48h0M14.03 9.93v-.35M14.03 7.37v-.35" class="cls-2"/><ellipse cx="14.03" cy="8.48" class="cls-2" rx="2.57" ry="2.52"/><path d="M8.2 17.11h1.92v2.88H8.2zM11.28 15.73h1.92v4.26h-1.92zM14.35 13.63h1.92v6.36h-1.92zM17.43 11.21h1.92v8.78h-1.92zM6.95 19.99h14.04" class="cls-1"/></svg>
         <h3 class="text-xl font-semibold mb-2">Efektywne i opłacalne rozwiązania</h3>
         <p>
           Dzięki naszej skali działalności i zoptymalizowanym procesom produkcyjnym oferujemy opłacalne rozwiązania,
@@ -249,9 +239,8 @@ get_header();
         </p>
       </div>
 
-      <!-- Punkt 5 -->
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Niezawodna produkcja i terminowość dostaw</h3>
+      <div class="flex flex-col items-start text-left">
+      <svg class="mb-4 h-24" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 28.35 28.35"><defs><style>.cls-1{fill:none;stroke:#95a3ab;stroke-linecap:round;stroke-linejoin:round;stroke-width:.46px}</style></defs><path d="m14.26 6.68 3.16.07-1.5 1.56h1.64l1.91-1.51 3.81.1c.26 0 .47-.25.47-.56 0-.57-.68-1.09-1.65-1.09-.07 0-.15 0-.22.01l-2.75.11-1.57-1.12h-1.64l1.25 1.2-2.55.11-.8-1.06h-1.61M15.89 14.77h7.93v3.46h-.86M20.91 18.23h-2.8M16.07 18.23h-.18" class="cls-1"/><path d="M20.86 15.75c.13 0 .24.12.24.26v1.23M19.52 15.75c.13 0 .24.12.24.26v1.23M18.19 15.75c.13 0 .24.12.24.26v1.23M16.85 15.75c.13 0 .24.12.24.26v1.23M22.96 18.23s.02.09.02.14c0 .32-.23.57-.52.57s-.52-.26-.52-.57M20.91 18.23s-.02.09-.02.14c0 .32.23.57.52.57s.52-.26.52-.57M18.11 18.23s.02.09.02.14c0 .32-.23.57-.52.57s-.52-.26-.52-.57M16.07 18.23s-.02.09-.02.14c0 .32.23.57.52.57s.52-.26.52-.57M13.21 21.94h8.06l.7-.75h1.74l-1.78 2.79H11.59" class="cls-1"/><path d="M17.3 21.95v-1.26h1.52v1.26M20.34 21.95v-1.26h-1.52v1.26M20.34 21.95v-1.26h1.52v.62M15.89 19.9h.52v2.04M22.94 12.92c0 .34-.26.61-.57.61s-.57-.27-.57-.61.26-.61.57-.61.57.27.57.61ZM17.72 12.92c0 .34-.26.61-.57.61s-.57-.27-.57-.61.26-.61.57-.61.57.27.57.61Z" class="cls-1"/><path d="M15.89 9.57h5.29v3.35h-3.46M16.57 12.92h-.68M21.19 10.17h1.79l.84 1.48v1.27h-.88M21.79 12.92h-.6M7.24 12.13v.03M7.24 12.13v.03M7.24 22.55h0l-1.81-.76M5.43 6.43l1.81-.77 7.7 3.27-3.85 1.62-3.84 1.61h0-.01l-1.81-.77" class="cls-1"/><path d="M11.09 13.15v-2.61l-5.66-2.6M14.94 8.93v10.39l-7.7 3.23M21.66 18.23h.55M16.81 18.23h.56" class="cls-1"/></svg>        <h3 class="text-xl font-semibold mb-2">Niezawodna produkcja i terminowość dostaw</h3>
         <p>
           W Aslan Food każdego roku gwarantujemy produkcję i dostawę dużych wolumenów wszystkich naszych produktów,
           zapewniając ciągłość dostaw. Od produkcji po dostarczenie – dbamy o to, by Twój towar dotarł na czas i w

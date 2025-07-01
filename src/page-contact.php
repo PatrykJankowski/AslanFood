@@ -3,8 +3,6 @@
 get_header();
 ?>
 
-<?php get_template_part('partials/section-baner', null, ['bg' => '/wp-content/themes/aslanfood/img/bg-hero.jpg']); ?>
-
 <section class="py-24">
     <div class="container mx-auto px-6">
         <h2 class="text-3xl xl:text-5xl font-medium mb-12">Kontakt</h2>
@@ -18,6 +16,7 @@ get_header();
                     </p>
                     <p class="mt-2">NIP: <?php the_field('nip'); ?></p>
                     <p class="mt-2">REGON: <?php the_field('regon'); ?></p>
+                    <p class="mt-2">KRS: <?php the_field('krs'); ?></p>
                 </div>
 
                 <div class="mt-6">
@@ -81,7 +80,7 @@ function display_team_section($section_name, $prefix, $max_people = 4)
 
 <section class="py-24 bg-gray-3">
     <div class="container mx-auto px-6">
-        <h2 class="text-3xl xl:text-5xl font-medium text-center mb-12">Nasz Zespół</h2>
+        <h2 class="text-3xl xl:text-5xl font-medium mb-12">Nasz Zespół</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <?php
             display_team_section('Dział Handlowy', 'sales_person_', 4);

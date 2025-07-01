@@ -9,7 +9,7 @@ main {
   margin-top: $navigation-height-mobile;
 
   @media (min-width: $resolution-xl) {
-    margin-top: 0;
+    margin-top: $navigation-height;
   }
 }
 

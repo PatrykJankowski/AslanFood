@@ -3,9 +3,15 @@
 get_header();
 ?>
 
-<?php $page_id = 2; ?>  
+<?php $page_id = 2; ?>
 
-<?php get_template_part('partials/section-baner', null, ['bg' => '/wp-content/themes/aslanfood/img/bg-hero.jpg']); ?>
+<section>
+    <video autoplay muted loop playsinline class="w-full object-cover max-h-[800px]">
+      <source src="/wp-content/themes/aslanfood/img/video.mp4" type="video/mp4">
+      Twój przeglądarka nie obsługuje odtwarzania wideo.
+    </video>
+</section>
+
 
 <section class="text-center py-24">
     <div class="container mx-auto px-6">
@@ -13,7 +19,7 @@ get_header();
             <!-- Lewa kolumna: Obraz -->
             <div class="relative mb-12">
                 <div class="pr-12">
-                    <img src="/wp-content/themes/aslanfood/img/food.jpg" alt="Delicious Wraps"
+                    <img src="/wp-content/themes/aslanfood/img/mardin.webp" alt="Delicious Wraps"
                         class="object-cover rounded-xl">
                 </div>
                 <div
@@ -25,8 +31,7 @@ get_header();
                                 d="M1.25 2.75C1.25 1.92157 1.92157 1.25 2.75 1.25H5.20943C5.53225 1.25 5.81886 1.45657 5.92094 1.76283L7.0443 5.13291C7.16233 5.48699 7.00203 5.87398 6.6682 6.0409L4.97525 6.88737C5.80194 8.72091 7.27909 10.1981 9.11263 11.0247L9.9591 9.3318C10.126 8.99796 10.513 8.83767 10.8671 8.9557L14.2372 10.0791C14.5434 10.1811 14.75 10.4677 14.75 10.7906V13.25C14.75 14.0784 14.0784 14.75 13.25 14.75H12.5C6.2868 14.75 1.25 9.7132 1.25 3.5V2.75Z"
                                 stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                        <a
-                            href="tel:+48<?php echo preg_replace('/\D/', '', get_field('phone', $page_id)); ?>">
+                        <a href="tel:+48<?php echo preg_replace('/\D/', '', get_field('phone', $page_id)); ?>">
                             <?php the_field('phone', $page_id); ?>
                         </a>
                     </p>
@@ -60,17 +65,21 @@ get_header();
             <!-- Prawa kolumna: Tekst -->
             <div class="text-left">
                 <h2 class="text-3xl xl:text-5xl font-medium mb-6">
-                    Aslan Food Sp. z o.o. to rodzinna firma działająca w branży spożywczej, obecna na rynku od 2020
-                    roku.
+                    Aslan Food – łączymy tradycję ze zrównoważonym biznesem
                 </h2>
                 <p class="text-lg font-medium text-black">
-                    Nasza siedziba mieści się w centralnej Polsce, jednak zasięg działalności obejmuje zarówno
-                    rynek krajowy, jak i międzynarodowy. Specjalizujemy się w pozyskiwaniu, imporcie, eksporcie oraz sprzedaży hurtowej i detalicznej
-                    produktów spożywczych najwyższej jakości.
+                    Aslan Food Sp. z o.o. to rodzinna firma działająca w branży spożywczej, obecna na rynku od 2020
+                    roku. Nasza siedziba mieści się w centralnej Polsce, jednak zasięg działalności obejmuje zarówno
+                    rynek krajowy, jak i międzynarodowy. Specjalizujemy się w pozyskiwaniu, imporcie, eksporcie oraz
+                    sprzedaży hurtowej i detalicznej produktów spożywczych najwyższej jakości.
                 </p>
                 <p class="mt-6">
-                    W naszej ofercie znajdują się starannie wyselekcjonowane herbaty, zboża, szeroka gama roślin strączkowych, orzechy, suszone owoce, przyprawy, a także inne
-                    towary pochodzenia roślinnego. Produkty te pochodzą zarówno z upraw konwencjonalnych, jak i ekologicznych, co pozwala nam elastycznie odpowiadać na potrzeby różnych segmentów rynku.
+                    Założycielem firmy jest Hasan Arslan Malik, pochodzi z malowniczego Mardin w Turcji — miejsca, gdzie
+                    od wieków spotykają się smaki Bliskiego Wschodu. Z pasji do tradycyjnej kuchni i z troski o zdrowe
+                    żywienie stworzył Aslan Food, łącząc bogactwo orientalnych produktów z nowoczesnym podejściem do
+                    diety. Jego wizją jest oferowanie produktów, które nie tylko przypominają o kulinarnych korzeniach,
+                    ale też wpisują się w świadome wybory współczesnych klientów. Aslan Food to firma budowana na
+                    wartościach: jakości, autentyczności i zrównoważonym podejściu do biznesu.
                 </p>
                 <a href="/nasze-marki" class="button mt-6">Nasze marki</a>
             </div>
@@ -84,48 +93,59 @@ get_header();
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div class="text-left">
                 <h2 class="text-3xl xl:text-5xl font-medium mb-6">
-                    Naszą misją jest dostarczanie klientom produktów, które spełniają najwyższe standardy jakości,
-                    świeżości i bezpieczeństwa żywności.
+                    Aslan Food Sp. z o. o. dostarcza swoim klientom produkty, które spełniają najwyższe standardy jakości, świeżości i bezpieczeństwa żywności.
                 </h2>
                 <p class="text-lg font-medium text-black">
-                    Współpracujemy z zaufanymi dostawcami z Polski i Turcji co pozwala nam oferować konkurencyjne warunki oraz niezawodność w realizacji zamówień.
+                    Współpracujemy z zaufanymi dostawcami z Polski i Turcji co pozwala nam oferować konkurencyjne
+                    warunki oraz niezawodność w realizacji zamówień.
                 </p>
                 <p class="mt-6">
-                    Specjalizujemy się w pozyskiwaniu, imporcie, eksporcie oraz sprzedaży hurtowej i detalicznej
-                    produktów spożywczych najwyższej jakości. W naszej ofercie znajdują się starannie wyselekcjonowane
-                    herbaty, zboża, szeroka gama roślin strączkowych, orzechy, suszone owoce, przyprawy, a także inne
-                    towary pochodzenia roślinnego. Produkty te pochodzą zarówno z upraw konwencjonalnych, jak i
-                    ekologicznych, co pozwala nam elastycznie odpowiadać na potrzeby różnych segmentów rynku.
+                    W ofercie firmy znajdują się starannie wyselekcjonowane herbaty, zboża, rośliny strączkowe, orzechy,
+                    suszone owoce czy cukier pochodzące zarówno z upraw konwencjonalnych, jak i ekologicznych. Kluczowym
+                    elementem asortymentu jest mięso kebabowe premium z certyfikatem Halal – produkt wyróżniający się
+                    intensywnym smakiem i wysoką jakością, stworzony z myślą o gastronomii oraz wymagających klientach.
+                    Aslan Food to również producent gotowych dań i przekąsek, takich jak klasyczne kanapki kebabowe,
+                    warianty Adana i Kofta, burgery oraz panierowane produkty drobiowe.
                 </p>
                 <p class="mt-2">Obsługujemy zarówno klientów indywidualnych, jak i odbiorców instytucjonalnych –
-                    hurtownie, sklepy,
-                    sieci handlowe oraz firmy z sektora HoReCa. Elastyczność, terminowość oraz partnerskie podejście do
-                    współpracy stanowią fundament naszej działalności.
+                    hurtownie, sklepy, sieci handlowe oraz firmy z sektora HoReCa. Elastyczność, terminowość oraz
+                    partnerskie podejście do współpracy stanowią fundament naszej działalności.
                 </p>
                 <p class="mt-2">Jako firma zorientowana na długofalowy rozwój, stawiamy na przejrzystość,
-                    odpowiedzialność biznesową
-                    oraz budowanie trwałych relacji z naszymi kontrahentami. Nieustannie poszukujemy nowych możliwości
-                    poszerzania oferty i podnoszenia jakości usług, aby jeszcze lepiej odpowiadać na potrzeby
-                    dynamicznie zmieniającego się rynku spożywczego.</p>
+                    odpowiedzialność biznesową oraz budowanie trwałych relacji z naszymi kontrahentami. Nieustannie
+                    poszukujemy nowych możliwości poszerzania oferty i podnoszenia jakości usług, aby jeszcze lepiej
+                    odpowiadać na potrzeby dynamicznie zmieniającego się rynku spożywczego.
+                </p>
             </div>
 
-            <img src="/wp-content/themes/aslanfood/img/vegetables.jpg" alt="Delicious Wraps"
-                class="h-full object-cover rounded-xl">
+            <img src="/wp-content/themes/aslanfood/img/onas.webp" alt="O nas"
+                class="w-full h-full object-cover rounded-xl">
         </div>
     </div>
 </section>
 
 <section class="py-24">
-  <div class="container mx-auto px-6">
-    <h2 class="text-3xl xl:text-5xl font-medium mb-6">Nasze wartości</h2>
-    <p class="text-lg leading-relaxed">
-      Zrównoważony rozwój stanowi podstawę wszystkich naszych działań, ponieważ wierzymy, że lepsza przyszłość dla kolejnych pokoleń zaczyna się już dziś. Zobowiązujemy się do produkcji wysokiej jakości produktów Aslan Food w sposób przyjazny dla środowiska, z poszanowaniem dobrostanu naszych pracowników oraz społeczeństwa.
-    </p>
-    <p class="text-lg leading-relaxed mt-6">
-      Nasze zaangażowanie w społeczną odpowiedzialność biznesu (CSR) widać na każdym etapie działalności. Stawiamy na surowce pochodzące ze zrównoważonych źródeł i maksymalne wykorzystanie ekologicznych zasobów.
-    </p>
-  </div>
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <img src="/wp-content/themes/aslanfood/img/naszewartosci.webp" alt="O nas"
+                class="w-full h-full object-cover rounded-xl">
+
+            <div class="text-left md:order-last">
+                <h2 class="text-3xl xl:text-5xl font-medium mb-6">Nasze wartości</h2>
+                <p class="text-lg leading-relaxed">
+                    Zrównoważony rozwój stanowi podstawę wszystkich naszych działań, ponieważ wierzymy, że lepsza przyszłość dla
+                    kolejnych pokoleń zaczyna się już dziś. Zobowiązujemy się do produkcji wysokiej jakości produktów Aslan Food
+                    w sposób przyjazny dla środowiska, z poszanowaniem dobrostanu naszych pracowników oraz społeczeństwa.
+                </p>
+                <p class="text-lg leading-relaxed mt-6">
+                    Nasze zaangażowanie w społeczną odpowiedzialność biznesu (CSR) widać na każdym etapie działalności. Stawiamy
+                    na surowce pochodzące ze zrównoważonych źródeł i maksymalne wykorzystanie ekologicznych zasobów.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
+
 
 
 <?php

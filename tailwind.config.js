@@ -12,10 +12,15 @@ module.exports = {
       'gray-5': "#ADB29E",
       'black': '#2C2F24',
       'red': '#AD343E',
-      'yellow': '#E7B222',
-      'primary': '#AD343E',
+      'primary': '#E7B222',
       'secondary': '#E7B222',
-      'text-color': '#2C2F24'
+      'text-color': '#2C2F24',
+      yellow: {
+          100: 'oklch(0.973 0.071 103.193)',
+          300: 'oklch(0.905 0.182 98.111)',
+          800: 'oklch(0.476 0.114 61.907)',
+          DEFAULT: '#E7B222'
+        },
     },
     container: {
       screens: {

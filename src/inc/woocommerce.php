@@ -47,12 +47,19 @@ function custom_product_excerpt_in_loop()
     echo apply_filters('woocommerce_short_description', $product->get_short_description());
     echo '</div>';
 }
+add_filter('woocommerce_short_description', 'limit_short_description_words_on_shop', 10, 1);
+function limit_short_description_words_on_shop($desc) {
+    if ( is_shop() || is_product_category() || is_product_tag() ) {
+        return wp_trim_words( wp_strip_all_tags($desc), 8, '...' );
+    }
+    return $desc;
+}
 
 
 add_filter('loop_shop_columns', 'aslanfood_loop_columns', 20);
 function aslanfood_loop_columns($columns)
 {
-    return 3;
+    return 4;
 }
 
 

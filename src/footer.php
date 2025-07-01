@@ -358,8 +358,67 @@
             d="m39.42 94.54-.47 1-1.06.17.77.76-.17 1.09.95-.52.95.5-.19-1.08.77-.78-1.07-.15-.48-.99zM43.93 94.18l-.21 1.08-.99.41.95.56.1 1.09.79-.72 1.06.26-.46-1.01.55-.93-1.07.1-.72-.84zM49.71 93.07l-1.03.35-.85-.66-.01 1.1-.89.64 1.02.33.3 1.05.64-.9 1.08.02-.63-.89.37-1.04zM35.04 94.19l.2 1.07.99.43-.95.54-.11 1.1-.79-.74-1.06.25.47-1-.54-.94 1.07.12.72-.83zM29.31 92.92l1.03.37.86-.65-.01 1.1.88.65-1.03.32-.31 1.04-.63-.9-1.08-.01.64-.87-.35-1.05z"
             class="cls-15" />
         </svg>
-        <p class="mt-6">W Aslan Food oferujemy herbatę, ziarna, rośliny strączkowe, orzechy i inne produkty najwyższej
-          jakości, pochodzące od najlepszych producentów z całego świata.</p>
+        <p class="mt-6">Producent, importer i eksporter żywności.</p>
+        <div class="flex mt-4">
+          <a href="https://instagram.com/aslan_food_shop" target="_blank" class="flex items-center -ml-[6px]">
+            <span class="text-primary text-xl"><svg width="28" height="28" viewBox="0 0 32 32" id="Camada_1"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <style type="text/css">
+                  .st0 {
+                    fill: #FFF
+                  }
+                </style>
+                <path d="M6,2h20c2.2,0,4,1.8,4,4v20c0,2.2-1.8,4-4,4H6c-2.2,0-4-1.8-4-4V6C2,3.8,3.8,2,6,2z"></path>
+                <g>
+                  <path class="st0"
+                    d="M21.3,9.7c-0.6,0-1.2,0.5-1.2,1.2c0,0.7,0.5,1.2,1.2,1.2c0.7,0,1.2-0.5,1.2-1.2C22.4,10.2,21.9,9.7,21.3,9.7z">
+                  </path>
+                  <path class="st0"
+                    d="M16,11.2c-2.7,0-4.9,2.2-4.9,4.9c0,2.7,2.2,4.9,4.9,4.9s4.9-2.2,4.9-4.9C21,13.4,18.8,11.2,16,11.2z M16,19.3   c-1.7,0-3.2-1.4-3.2-3.2c0-1.7,1.4-3.2,3.2-3.2c1.7,0,3.2,1.4,3.2,3.2C19.2,17.9,17.8,19.3,16,19.3z">
+                  </path>
+                  <path class="st0"
+                    d="M20,6h-8c-3.3,0-6,2.7-6,6v8c0,3.3,2.7,6,6,6h8c3.3,0,6-2.7,6-6v-8C26,8.7,23.3,6,20,6z M24.1,20   c0,2.3-1.9,4.1-4.1,4.1h-8c-2.3,0-4.1-1.9-4.1-4.1v-8c0-2.3,1.9-4.1,4.1-4.1h8c2.3,0,4.1,1.9,4.1,4.1V20z">
+                  </path>
+                </g>
+              </svg>
+            </span>
+
+          </a>
+          <a href="https://facebook.com/p/Aslan-Food-Sp-z-o-o-100064270352716" target="_blank"
+            class="flex items-center ml-2">
+            <span class="text-primary text-xl">
+              <svg width="28" height="28" viewBox="0 0 32 32" id="Camada_1" version="1.1" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <style type="text/css">
+                  .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #FFF
+                  }
+                </style>
+                <path d="M6,2h20c2.2,0,4,1.8,4,4v20c0,2.2-1.8,4-4,4H6c-2.2,0-4-1.8-4-4V6C2,3.8,3.8,2,6,2z"></path>
+                <path class="st0"
+                  d="M13.2,16.1v9.7c0,0.1,0.1,0.3,0.3,0.3h3.9c0.2,0,0.3-0.1,0.3-0.3v-9.8h2.8c0.1,0,0.3-0.1,0.3-0.2l0.3-3  c0-0.2-0.1-0.3-0.3-0.3h-3.1v-2.1c0-0.5,0.4-0.9,1-0.9h2.2c0.2,0,0.3-0.1,0.3-0.3V6.3C21,6.1,20.9,6,20.7,6h-3.6  c-2.1,0-3.9,1.6-3.9,3.6v2.9h-1.9c-0.2,0-0.3,0.1-0.3,0.3v3c0,0.1,0.1,0.3,0.3,0.3h1.9V16.1z">
+                </path>
+              </svg>
+            </span>
+          </a>
+
+
+          <a href="https://www.linkedin.com/in/aslan-food/" target="_blank"
+            class="flex items-center ml-2">
+            <span class="text-primary text-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 20 20" fill="#ffffff"
+                class="mb-1">
+                <path fill="none" d="M0 0h20v20H0z"></path>
+                <path
+                  d="M2.5 18h3V6.9h-3V18zM4 2c-1 0-1.8.8-1.8 1.8S3 5.6 4 5.6s1.8-.8 1.8-1.8S5 2 4 2zm6.6 6.6V6.9h-3V18h3v-5.7c0-3.2 4.1-3.4 4.1 0V18h3v-6.8c0-5.4-5.7-5.2-7.1-2.6z">
+                </path>
+              </svg>
+            </span>
+          </a>
+        </div>
       </div>
 
       <!-- Middle Column: Menu Links in 2 Columns -->
@@ -378,7 +437,7 @@
               'link_before' => '<span class="hover:text-gray-400">',
               'link_after' => '</span>',
               'walker' => new class extends Walker_Nav_Menu {
-              
+
               function start_el(&$output, $item, $depth = 0, $args = null, $id = 0)
               {
                 $output .= '<li>';
@@ -423,20 +482,8 @@
 
       <!-- Right Column: Instagram Pictures -->
       <div class="col-span-12 sm:col-span-4 md:col-span-3">
-        <h2 class="text-lg mb-6 text-white font-DMSans font-bold">Obserwuj nas na Instagramie</h2>
-        <div class="flex grid-cols-2 sm:grid-cols-4 gap-4">
-          <img src="/wp-content/uploads/2025/04/tea-1024x685.jpg" alt="Instagram 1"
-            class="w-full !h-[136px] object-cover rounded-lg">
-          <img src="/wp-content/uploads/2025/04/oil-738x1024.jpg" alt="Instagram 2"
-            class="w-full !h-[136px] object-cover rounded-lg">
-        </div>
-        <!-- Drugi wiersz -->
-        <div class="flex grid-cols-2 sm:grid-cols-4 gap-4 mt-4">
-          <img src="/wp-content/uploads/2025/04/nuts-1024x1024.jpg" alt="Instagram 3"
-            class="w-full !h-[136px] object-cover rounded-lg">
-          <img src="/wp-content/uploads/2025/04/sugar-683x1024.jpg" alt="Instagram 4"
-            class="w-full !h-[136px] object-cover rounded-lg">
-        </div>
+        <h2 class="text-lg mb-6 text-white font-DMSans font-bold">Aslan Food Sp. z o.o</h2>
+        <img src="/wp-content/themes/aslanfood/img/magazyn.webp" class="rounded-lg">
       </div>
 
     </div>

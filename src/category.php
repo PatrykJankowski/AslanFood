@@ -14,7 +14,6 @@ $args = array(
 $posts_query = new WP_Query($args);
 ?>
 
-<?php get_template_part('partials/section-baner', null, ['bg' => '/wp-content/themes/aslanfood/img/bg-hero.jpg']); ?>
 
 <section>
     <div class="container mx-auto px-6 mt-24">

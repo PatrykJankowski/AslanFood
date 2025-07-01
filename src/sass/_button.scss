@@ -7,13 +7,14 @@
 :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce button.button.woocommerce-button,
 .woocommerce table.my_account_orders .button,
 body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-post-visual-editor) .woocommerce a.button,
-.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.woof_reset_search_form {
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.woof_reset_search_form,
+body.single-product.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles) a.button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 50px;
     max-width: fit-content;
-    padding: 0 1.25rem;
+    padding: 0 14px;
     border-radius: 34px;
     border: 1px solid $black;
     font-family: 'DM Sans', sans-serif;
@@ -25,7 +26,6 @@ body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-p
 
     @media (min-width: $resolution-xl) {
         height: 58px;
-        padding: 0 2rem;
         border-width: 2px;
     }
 
@@ -36,8 +36,8 @@ body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-p
     }
 
     &--primary {
-        background-color: $primary;
-        border-color: $primary;
+        background-color: $secondary; // changed to secondary
+        border-color: $secondary; // changed to secondary
         color: $white;
 
 
@@ -61,8 +61,8 @@ body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-p
 
 
 .wc-block-components-button {
-    background-color: $primary;
-    border-color: $primary;
+    background-color: $secondary; // changed to secondary
+    border-color: $secondary; // changed to secondary
     color: $white;
 
     &:hover {
@@ -90,6 +90,10 @@ body.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles):not(.edit-p
     &:hover {
         border-color: $black;
     }
+}
+
+body.single-product.theme-aslanfood:not(.woocommerce-block-theme-has-button-styles) a.button {
+    height: 50px;
 }
 
 .wc-block-components-shipping-calculator-address__button {

@@ -3,8 +3,6 @@
 get_header();
 ?>
 
-<?php get_template_part('partials/section-baner', null, ['bg' => '/wp-content/themes/aslanfood/img/bg-hero.jpg']); ?>
-
 <section class="container mx-auto py-24 px-4 single-page">
     <?php
     if (have_posts()):

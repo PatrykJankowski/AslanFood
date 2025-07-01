@@ -1,5 +1,13 @@
 /* Stylowanie wszystkich inputów w blokach checkout */
 body.theme-aslanfood {
+  .woocommerce-message {
+    border-top-color: $primary;
+
+    &::before {
+      color: $primary;
+    }
+  }
+
   .wc-block-components-form {
     .wc-block-components-text-input {
       input[type="text"],
@@ -117,7 +125,7 @@ body.theme-aslanfood {
   &.woocommerce ul.products li.product,
   &.woocommerce-page ul.products li.product,
   .wc-block-grid__product {
-    min-height: 550px;
+    min-height: 494px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,11 +179,15 @@ body.theme-aslanfood {
 
   &.woocommerce div.product .woocommerce-tabs ul.tabs li,
   &.woocommerce div.product .woocommerce-tabs ul.tabs::before {
-    border-color: $gray-1;
+    // border-color: $gray-1;
   }
 
   &.woocommerce div.product .woocommerce-tabs ul.tabs li {
     background-color: $gray-3;
+  }
+
+    &.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    background-color: $white;
   }
 
   &.woocommerce div.product .woocommerce-tabs .panel h2,
@@ -187,11 +199,15 @@ body.theme-aslanfood {
   .woocommerce-product-gallery__image {
     border: 1px solid $gray-1;
     border-top: none;
+
+    &:first-child {
+      border-top: 1px solid $gray-1;
+    }
   }
 
   .woocommerce-product-details__short-description {
     font-size: 0.875rem;
-    margin: 10px 0;
+    line-height: 1.25rem;
   }
 
   .related.products {
@@ -247,6 +263,7 @@ body.theme-aslanfood {
 
   .woocommerce .woocommerce-customer-details .woocommerce-column__title {
     font-size: 1.25rem;
+    line-height: 1.25rem;
     margin-bottom: 6px;
   }
 

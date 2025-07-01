@@ -14,10 +14,8 @@ $page_id = get_option('page_for_posts');
 $page = get_post($page_id)
 ?>
 
-<?php get_template_part('partials/section-baner', null, ['bg' => '/wp-content/themes/aslanfood/img/bg-hero.jpg']); ?>
-
 <section>
-    <div class="container mx-auto px-6 mt-24">
+    <div class="container mx-auto px-6 pt-24">
         <h2 class="text-3xl xl:text-5xl font-medium text-center mb-6"><?php echo get_the_title($page_id); ?></h2>
         <div class="flex justify-center">
             <div class="max-w-2xl text-center text-lg"><?php echo apply_filters('the_content', $page->post_content); ?></div>
