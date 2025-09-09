@@ -13,7 +13,7 @@ for ($i = 1; $i <= 3; $i++) {
     $btn2_text = get_field("hero_slide_{$i}_btn2_text", $shop_page_id);
     $btn2_url = get_field("hero_slide_{$i}_btn2_url", $shop_page_id);
 
-    if ($title && $image) {
+    if ($image) {
         $slides[] = [
             'title' => $title,
             'text' => $text,
@@ -37,23 +37,13 @@ for ($i = 1; $i <= 3; $i++) {
                     style="background-image: url('<?php echo esc_url($slide['image']); ?>');">
                     <div class="container mx-auto px-6 text-center text-white">
                         <h2
-                            class="max-w-3xl text-3xl font-medium xl:text-5xl font-medium xl:leading-[110px] mx-auto <?php echo $slide['isWhite'] ? 'text-white' : ''; ?>">
+                            class="max-w-3xl text-3xl font-medium xl:text-5xl xl:leading-[110px] mx-auto">
                             <?php echo esc_html($slide['title']); ?>
                         </h2>
                         <p
-                            class="my-10 font-semibold text-xl text-black <?php echo $slide['isWhite'] ? 'text-white' : 'text-black'; ?>">
+                            class="my-10 font-semibold text-xl text-black">
                             <?php echo esc_html($slide['text']); ?>
                         </p>
-                        <div class="flex justify-center flex-wrap gap-4">
-                            <?php if ($slide['btn1_text'] && $slide['btn1_url']): ?>
-                                <a href="<?php echo esc_url($slide['btn1_url']); ?>"
-                                    class="button button--secondary"><?php echo esc_html($slide['btn1_text']); ?></a>
-                            <?php endif; ?>
-                            <?php if ($slide['btn2_text'] && $slide['btn2_url']): ?>
-                                <a href="<?php echo esc_url($slide['btn2_url']); ?>"
-                                    class="button"><?php echo esc_html($slide['btn2_text']); ?></a>
-                            <?php endif; ?>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -70,9 +60,9 @@ for ($i = 1; $i <= 3; $i++) {
 </section>
 
 <section class="container mx-auto mt-12">
-  <div class="flex items-center justify-center bg-yellow-100 border border-yellow-300 text-yellow-800 rounded-xl p-4 animate-pulse-fade">
+  <div class="flex items-center uppercase justify-center bg-yellow text-white rounded-xl p-4 animate-pulse-fade">
     <span class="text-lg sm:text-xl font-medium">
-      Sprzedaż hurtowa realizowana jest za pośrednictwem działu handlowego.
+      Sprzedaż hurtowa realizowana jest za pośrednictwem działu handlowego
     </span>
   </div>
 </section>

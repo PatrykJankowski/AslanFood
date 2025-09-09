@@ -406,8 +406,7 @@
           </a>
 
 
-          <a href="https://www.linkedin.com/in/aslan-food/" target="_blank"
-            class="flex items-center ml-2">
+          <a href="https://www.linkedin.com/in/aslan-food/" target="_blank" class="flex items-center ml-2">
             <span class="text-primary text-xl">
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 20 20" fill="#ffffff"
                 class="mb-1">
@@ -419,6 +418,10 @@
             </span>
           </a>
         </div>
+
+        <h2 class="text-white text-lg font-bold mt-2 mb-[-16px]">Newsletter</h2>
+        <?php show_noptin_form(1290); ?>
+
       </div>
 
       <!-- Middle Column: Menu Links in 2 Columns -->
@@ -479,13 +482,10 @@
         </div>
       </div>
 
-
-      <!-- Right Column: Instagram Pictures -->
       <div class="col-span-12 sm:col-span-4 md:col-span-3">
         <h2 class="text-lg mb-6 text-white font-DMSans font-bold">Aslan Food Sp. z o.o</h2>
         <img src="/wp-content/themes/aslanfood/img/magazyn.webp" class="rounded-lg">
       </div>
-
     </div>
   </div>
 
@@ -494,6 +494,32 @@
       © 2025 Aslan Food. Wszelkie prawa zastrzeżone.</a>
     </div>
   </div>
+
+  <button id="scrollTopBtn" aria-label="Scroll to top"
+    class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 flex items-center justify-center w-12 h-12 rounded-full bg-yellow text-white shadow-lg hover:bg-yellow-300 transition-opacity opacity-0 pointer-events-none">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <script>
+    const btn = document.getElementById('scrollTopBtn');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        btn.classList.remove('opacity-0', 'pointer-events-none');
+        btn.classList.add('opacity-90');
+      } else {
+        btn.classList.remove('opacity-90');
+        btn.classList.add('opacity-0', 'pointer-events-none');
+      }
+    });
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
 </footer>
 
 

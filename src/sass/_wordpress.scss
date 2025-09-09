@@ -8,7 +8,7 @@ body.woocommerce nav.woocommerce-pagination {
     border: none;
 
     li {
-        border: none;
+      border: none;
       a,
       span {
         width: 48px;
@@ -20,13 +20,9 @@ body.woocommerce nav.woocommerce-pagination {
         background: $black;
         border-right: 1px solid $gray-3;
 
-        
-
         &.current {
           background: $primary;
           color: $white;
-
-          
         }
       }
     }
@@ -156,41 +152,60 @@ body.woocommerce nav.woocommerce-pagination {
 // Newsletter
 
 .noptin-optin-main-wrapper {
-  width: 100%;
+  .noptin-form-footer {
+    .noptin-form-button-block {
+      border-radius: 0;
+      border: 1px solid $primary;
+      height: auto;
+      max-width: 100%;
+      cursor: pointer;
+      color: $white;
 
-  .noptin-optin-form-wrapper .noptin-form-footer {
-    padding: 0px;
-  }
+      font-family: "DM Sans", sans-serif;
+    }
 
-  .noptin-optin-form {
-    height: 204px;
-  }
-
-  .noptin-form-footer .noptin-form-button-block {
-    border: 0;
-    border-radius: 0;
-    height: auto;
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .noptin-form-footer .noptin-form-field {
-    border: 0;
-    border-radius: 0;
-    background: #fff;
-  }
-
-  .noptin-alert {
-    padding: 0.25rem;
-    margin-top: 0;
-  }
-
-  .noptin-optin-form {
-    justify-content: start;
+    .noptin-form-field {
+      padding: 6px;
+    }
   }
 }
+
+// .noptin-optin-main-wrapper {
+//   width: 100%;
+
+//   .noptin-optin-form-wrapper .noptin-form-footer {
+//     padding: 0px;
+//   }
+
+//   .noptin-optin-form {
+//     height: 204px;
+//   }
+
+//   .noptin-form-footer .noptin-form-button-block {
+//     border: 0;
+//     border-radius: 0;
+//     height: auto;
+//     font-family: Poppins;
+//     font-weight: 400;
+//     font-size: 16px;
+//     cursor: pointer;
+//   }
+
+//   .noptin-form-footer .noptin-form-field {
+//     border: 0;
+//     border-radius: 0;
+//     background: #fff;
+//   }
+
+//   .noptin-alert {
+//     padding: 0.25rem;
+//     margin-top: 0;
+//   }
+
+//   .noptin-optin-form {
+//     justify-content: start;
+//   }
+// }
 
 // SWOOF
 body .woof_checkbox_sales_container {

@@ -1,3 +1,12 @@
 .grecaptcha-badge {
-    visibility: hidden;
+  visibility: hidden;
+}
+
+body #chaty-widget-0 .channel-icon-Whatsapp .color-element {
+  fill: $yellow;
+  color: $yellow;
+}
+
+body #chaty-widget-0 .channel-icon-Whatsapp .chaty-svg {
+  background-color: $yellow;
 }

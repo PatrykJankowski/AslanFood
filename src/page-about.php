@@ -127,7 +127,7 @@ get_header();
 <section class="py-24">
     <div class="container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <img src="/wp-content/themes/aslanfood/img/naszewartosci.webp" alt="O nas"
+            <img src="/wp-content/themes/aslanfood/img/praca2.webp" alt="O nas"
                 class="w-full h-full object-cover rounded-xl">
 
             <div class="text-left md:order-last">

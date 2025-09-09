@@ -35,10 +35,9 @@ get_header();
     </div>
 
     <div class="space-y-24 mt-24">
-      <!-- Sekcja 1: Możliwość rozwoju -->
       <div class="flex flex-col md:flex-row items-center md:space-x-12">
         <div class="md:w-1/2">
-          <img src="/wp-content/themes/aslanfood/img/praca2.webp" alt="Możliwość rozwoju"
+          <img src="/wp-content/themes/aslanfood/img/praca.webp" alt="Możliwość rozwoju"
             class="rounded-lg shadow-md">
         </div>
         <div class="md:w-1/2 mt-6 md:mt-0">
@@ -56,27 +55,6 @@ get_header();
             wspólnie rozwijajmy się oraz osiągajmy sukcesy w świecie produkcji spożywczej.</p>
         </div>
       </div>
-
-      <!-- Sekcja 2: Zawsze w ruchu! -->
-      <div class="flex flex-col md:flex-row-reverse items-center md:space-x-12 md:space-x-reverse">
-        <div class="md:w-1/2">
-          <img src="/wp-content/themes/aslanfood/img/praca1.webp" alt="Zrównoważone przedsiębiorstwo"
-            class="rounded-lg shadow-md">
-        </div>
-        <div class="md:w-1/2 mt-6 md:mt-0">
-          <h3 class="text-2xl font-semibold mb-4">Zrównoważone przedsiębiorstwo</h3>
-          <p class="mb-4">W Aslan Foods myślimy nie w perspektywie lat, lecz pokoleń. Nasza strategia zrównoważonego
-            rozwoju opiera się na odpowiedzialnym zarządzaniu całym łańcuchem wartości.</p>
-          <p>Organizujemy nasze procesy tak, aby pozostać zdrową firmą rodzinną i minimalizować wpływ na środowisko,
-            produkując żywność o wysokiej wartości odżywczej.</p>
-            <h3 class="text-2xl font-semibold mb-4 mt-4">Od start-upu do lidera</h3>
-          <p class="mb-4">Od 2020 roku przeszliśmy drogę od lokalnego start-upu do międzynarodowego lidera rynku
-            spożywczego. Działamy jak rodzina i stale się rozwijamy.</p>
-          <p>Innowacyjność i jakość to nasza codzienność.</p>
-        </div>
-      </div>
-
-      
     </div>
   </div>
 </section>

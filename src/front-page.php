@@ -23,7 +23,7 @@ get_header();
 <?php
 $slides = [];
 
-for ($i = 1; $i <= 3; $i++) {
+for ($i = 1; $i <= 4; $i++) {
     $title = get_field("hero_slide_{$i}_title");
     $text = get_field("hero_slide_{$i}_text");
     $isWhite = get_field("hero_slide_{$i}_iswhite");
@@ -53,32 +53,44 @@ for ($i = 1; $i <= 3; $i++) {
         <?php foreach ($slides as $index => $slide): ?>
             <div
                 class="absolute inset-0 transition-opacity duration-1000 ease-in-out <?php echo $index === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0'; ?> slide">
-                <div class="w-full h-full bg-cover bg-center flex items-center justify-center"
+
+                <div class="w-full h-full bg-cover bg-center"
                     style="background-image: url('<?php echo esc_url($slide['image']); ?>');">
-                    <div class="container mx-auto px-6 text-center text-white">
-                        <h2
-                            class="max-w-3xl text-5xl font-medium xl:text-[80px] xl:leading-[100px] mx-auto <?php echo $slide['isWhite'] ? 'text-white' : ''; ?>">
-                            <?php echo esc_html($slide['title']); ?>
-                        </h2>
-                        <p
-                            class="mt-8 mb-10 font-semibold text-xl text-black <?php echo $slide['isWhite'] ? 'text-white' : 'text-black'; ?>">
-                            <?php echo esc_html($slide['text']); ?></p>
-                        <div class="flex justify-center flex-wrap gap-4">
-                            <?php if ($slide['btn1_text'] && $slide['btn1_url']): ?>
-                                <a href="<?php echo esc_url($slide['btn1_url']); ?>"
-                                    class="button button--secondary"><?php echo esc_html($slide['btn1_text']); ?></a>
-                            <?php endif; ?>
-                            <?php if ($slide['btn2_text'] && $slide['btn2_url']): ?>
-                                <a href="<?php echo esc_url($slide['btn2_url']); ?>"
-                                    class="button"><?php echo esc_html($slide['btn2_text']); ?></a>
-                            <?php endif; ?>
+
+                    <div class="w-full h-full flex items-center">
+                        <div class="bg-black/50 xl:bg-black/40 w-full xl:w-1/2 h-full flex items-center text-white">
+                            <div class="container mx-auto px-6 xl:pl-28 xl:pr-6 text-left">
+                                <h2
+                                    class="text-4xl xl:text-[76px] font-medium leading-tight xl:leading-[96px] mb-6 <?php echo $slide['isWhite'] ? 'text-white' : ''; ?>">
+                                    <?php echo esc_html($slide['title']); ?>
+                                </h2>
+
+                                <p
+                                    class="text-xl font-semibold mb-10 <?php echo $slide['isWhite'] ? 'text-white' : 'text-black'; ?>">
+                                    <?php echo esc_html($slide['text']); ?>
+                                </p>
+
+                                <div class="flex flex-wrap justify-start gap-4">
+                                    <?php if ($slide['btn1_text'] && $slide['btn1_url']): ?>
+                                        <a href="<?php echo esc_url($slide['btn1_url']); ?>" class="button button--secondary">
+                                            <?php echo esc_html($slide['btn1_text']); ?>
+                                        </a>
+                                    <?php endif; ?>
+
+                                    <?php if ($slide['btn2_text'] && $slide['btn2_url']): ?>
+                                        <a href="<?php echo esc_url($slide['btn2_url']); ?>" class="button">
+                                            <?php echo esc_html($slide['btn2_text']); ?>
+                                        </a>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         <?php endforeach; ?>
 
-        <!-- Dots -->
         <div id="hero-dots" class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3 z-20">
             <?php foreach ($slides as $index => $_): ?>
                 <button class="w-3 h-3 rounded-full bg-white/50 dot <?php echo $index === 0 ? 'bg-white' : ''; ?>"
@@ -87,6 +99,7 @@ for ($i = 1; $i <= 3; $i++) {
         </div>
     </div>
 </section>
+
 
 <section class="text-center pb-24">
     <div class="container mx-auto px-6 pb-10 flex justify-between">
