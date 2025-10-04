@@ -584,8 +584,9 @@
                 <?php endif; ?>
             </a>
 
-            <div id="navbar__toggle" class="navbar__toggle" onclick="slideToggle()"><i class="navbar__toggle-icon"></i>
-            </div>
+            <?php echo do_shortcode('[wpml_language_selector_widget]'); ?>
+
+            <div id="navbar__toggle" class="navbar__toggle" onclick="slideToggle()"><i class="navbar__toggle-icon"></i></div>
         </div>
     </header>
 

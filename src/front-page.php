@@ -103,9 +103,9 @@ for ($i = 1; $i <= 4; $i++) {
 
 <section class="text-center pb-24">
     <div class="container mx-auto px-6 pb-10 flex justify-between">
-        <h2 class="text-3xl xl:text-5xl font-medium">Zobacz nowości w sklepie</h2>
+        <h2 class="text-3xl xl:text-5xl font-medium"><?php echo __('Zobacz nowości w sklepie', 'aslan-food'); ?></h2>
         <a href="<?php echo site_url('/sklep/'); ?>" class="button button--secondary hidden xl:flex">
-            Zobacz wszystkie
+            <?php echo __('Zobacz wszystkie', 'aslan-food'); ?>
         </a>
     </div>
     <div class="container mx-auto px-6">
@@ -146,7 +146,7 @@ for ($i = 1; $i <= 4; $i++) {
             ?>
         </div>
         <a href="<?php echo site_url('/sklep/'); ?>" class="button button--secondary mt-12 mx-auto flex xl:hidden">
-            Zobacz wszystkie
+            <?php echo __('Zobacz wszystkie', 'aslan-food'); ?>
         </a>
     </div>
 </section>
@@ -547,20 +547,15 @@ for ($i = 1; $i <= 4; $i++) {
             <!-- Prawa kolumna: Tekst -->
             <div class="text-left">
                 <h2 class="text-3xl xl:text-5xl font-medium mb-6">
-                    Tradycyjny smak kuchni orientalnej
+                    <?php echo __('Tradycyjny smak kuchni orientalnej', 'aslan-food'); ?>
                 </h2>
+
                 <p class="text-lg font-medium text-black">
-                    Odkryj naszą różnorodną gamę wysokiej jakości produktów i zobacz, jak Aslan Food może wzbogacić
-                    Twoją codzienną dietę. Rozpocznij z nami swoją podróż.
+                    <?php echo __('Odkryj naszą różnorodną gamę wysokiej jakości produktów i zobacz, jak Aslan Food może wzbogacić Twoją codzienną dietę. Rozpocznij z nami swoją podróż.', 'aslan-food'); ?>
                 </p>
 
                 <p class="mt-6">
-                    W naszej ofercie znajdują się starannie wyselekcjonowane herbaty, zboża, rośliny strączkowe,
-                    orzechy, suszone owoce czy cukier pochodzące zarówno z upraw konwencjonalnych, jak i ekologicznych.
-                    Kluczowym elementem asortymentu jest mięso kebabowe premium z certyfikatem Halal – produkt
-                    wyróżniający się intensywnym smakiem i wysoką jakością, stworzony z myślą o gastronomii oraz
-                    wymagających klientach. Aslan Food to również producent gotowych dań i przekąsek, takich jak
-                    klasyczne kanapki kebabowe, warianty Adana i Kofta, burgery oraz panierowane produkty drobiowe.
+                    <?php echo __('W naszej ofercie znajdują się starannie wyselekcjonowane herbaty, zboża, rośliny strączkowe, orzechy, suszone owoce czy cukier pochodzące zarówno z upraw konwencjonalnych, jak i ekologicznych. Kluczowym elementem asortymentu jest mięso kebabowe premium z certyfikatem Halal – produkt wyróżniający się intensywnym smakiem i wysoką jakością, stworzony z myślą o gastronomii oraz wymagających klientach. Aslan Food to również producent gotowych dań i przekąsek, takich jak klasyczne kanapki kebabowe, warianty Adana i Kofta, burgery oraz panierowane produkty drobiowe.', 'aslan-food'); ?>
                 </p>
 
                 <div class="my-12 flex flex-wrap justify-between items-center gap-2 md:gap-12">
@@ -569,7 +564,7 @@ for ($i = 1; $i <= 4; $i++) {
                     <img src="/wp-content/themes/aslanfood/img/aslan.png" alt="Logo Aslan" class="h-16 md:h-20">
                 </div>
 
-                <a href="/nasze-marki" class="button mt-2">Nasze marki</a>
+                <a href="/nasze-marki" class="button mt-2"><?php echo __('Nasze marki', 'aslan-food'); ?></a>
 
             </div>
         </div>
@@ -591,9 +586,9 @@ $latest_posts = new WP_Query($args);
 
 <section class="py-24 bg-aliceblue">
     <div class="container mx-auto px-6 pb-10 flex justify-between">
-        <h2 class="text-3xl xl:text-5xl font-medium">Ostatnie artykuły</h2>
+        <h2 class="text-3xl xl:text-5xl font-medium"><?php echo __('Ostatnie artykuły', 'aslan-food'); ?></h2>
         <a href="<?php echo site_url('/blog/'); ?>" class="button button--secondary hidden xl:flex">
-            Zobacz więcej artykułów
+            <?php echo __('Zobacz więcej artykułów', 'aslan-food'); ?>
         </a>
     </div>
 
@@ -624,7 +619,7 @@ $latest_posts = new WP_Query($args);
                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </h3>
                             <p class="flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 25); ?></p>
-                            <a href="<?php the_permalink(); ?>" class="mt-4 text-primary font-semibold">Czytaj więcej →</a>
+                            <a href="<?php the_permalink(); ?>" class="mt-4 text-primary font-semibold"><?php echo __('Czytaj więcej', 'aslan-food'); ?> →</a>
                         </div>
                     </article>
 
@@ -650,8 +645,7 @@ $latest_posts = new WP_Query($args);
                                 <h3 class="flex-grow text-xl font-DMSans font-medium mb-2">
                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </h3>
-                                <a href="<?php the_permalink(); ?>" class="mt-2 text-primary font-semibold">Czytaj więcej
-                                    →</a>
+                                <a href="<?php the_permalink(); ?>" class="mt-2 text-primary font-semibold"><?php echo __('Czytaj więcej', 'aslan-food'); ?> →</a>
                             </div>
                         </article>
                         <?php
@@ -661,7 +655,7 @@ $latest_posts = new WP_Query($args);
             </div> <!-- Zamyka kolumnę z mniejszymi artykułami -->
             <?php wp_reset_postdata(); ?>
             <a href="<?php echo site_url('/blog/'); ?>" class="button button--secondary mt-12 mx-auto flex xl:hidden">
-                Zobacz więcej artykułów
+                <?php echo __('Zobacz więcej artykułów', 'aslan-food'); ?>
             </a>
         </div>
     <?php else: ?>

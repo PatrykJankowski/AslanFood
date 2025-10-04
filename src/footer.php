@@ -491,7 +491,7 @@
 
   <div class="container mx-auto px-6">
     <div class="mt-8 border-t border-white/20 pt-4 text-center text-sm">
-      © 2025 Aslan Food. Wszelkie prawa zastrzeżone.</a>
+      © 2025 Aslan Food. <?php echo __('Wszelkie prawa zastrzeżone', 'aslan-food'); ?>.</a>
     </div>
   </div>
 
